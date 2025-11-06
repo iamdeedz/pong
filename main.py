@@ -32,9 +32,9 @@ def update(delta_time):
         l_paddle_y += paddle_speed * delta_time if l_paddle_y + (
                     paddle_speed * delta_time) < screen_height - paddle_height else 0
 
-    if keys_pressed[p.K_e]:
+    if keys_pressed[p.K_UP]:
         r_paddle_y -= paddle_speed * delta_time if r_paddle_y - (paddle_speed * delta_time) > 0 else 0
-    if keys_pressed[p.K_d]:
+    if keys_pressed[p.K_DOWN]:
         r_paddle_y += paddle_speed * delta_time if r_paddle_y + (
                     paddle_speed * delta_time) < screen_height - paddle_height else 0
 
